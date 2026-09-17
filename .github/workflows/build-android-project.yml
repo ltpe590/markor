@@ -13,7 +13,10 @@
 
 name: "CI"
 
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+  workflow_dispatch: # <--- Added this line to give you the "Run workflow" button
 
 jobs:
   build:
